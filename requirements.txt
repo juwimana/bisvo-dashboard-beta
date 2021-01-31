@@ -81,7 +81,6 @@ pytest
 pytest-json-report
 pytest-metadata
 python-dateutil
-pytz
 pywin32
 pywinpty
 pyzmq
