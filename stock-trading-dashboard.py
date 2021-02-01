@@ -73,7 +73,7 @@ def main():
 	##view checkbox
 	# dashboard = display_options.radio("",("My Portfolio","Real Time","Historical","Watchlist",\
 	# 									"Algorithmic Trading Strategies"), index=0)
-	dashboard = display_options.radio("",("Historical"), index=0)
+	dashboard = display_options.radio("",("Historical"))
 
 	####Add Help Content
 	if help_btn:
