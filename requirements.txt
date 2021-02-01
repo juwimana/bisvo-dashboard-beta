@@ -90,7 +90,7 @@ soupsieve
 sqlparse
 statsmodels
 streamlit
-TA-Lib @ https://github.com/juwimana/bisvo-dashboard-beta/blob/master/TA_Lib-0.4.19-cp39-cp39-win_amd64.whl
+TA-Lib 
 tabpy-client
 tabpy-server
 terminado
