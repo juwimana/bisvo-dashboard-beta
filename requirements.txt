@@ -80,7 +80,7 @@ sorl-thumbnail==12.7.0
 sqlparse==0.4.1
 statistics==1.0.3.5
 streamlit==0.75.0
-TA-Lib @ file:///C:/Users/jeanm/OneDrive%20-%20University%20of%20Southern%20Indiana/Documents/2021/Family/Investments/Stock%20Trading/Jean%20Marie%20Uwimana/Programming/Python/Bisvo%20Terminal/TA_Lib-0.4.19-cp39-cp39-win_amd64.whl
+TA-Lib @ https://github.com/juwimana/bisvo-dashboard-beta/blob/master/TA_Lib-0.4.19-cp39-cp39-win_amd64.whl
 terminado==0.9.2
 testpath==0.4.4
 toml==0.10.2
@@ -95,5 +95,5 @@ wcwidth==0.2.5
 webencodings==0.5.1
 widgetsnbextension==3.5.1
 wiki==0.7.3
-wordcloud @ file:///C:/Users/jeanm/OneDrive%20-%20University%20of%20Southern%20Indiana/Documents/2021/Family/Investments/Stock%20Trading/Jean%20Marie%20Uwimana/Programming/Python/Bisvo%20Terminal/wordcloud-1.8.1-cp39-cp39-win_amd64.whl
+wordcloud @ https://github.com/juwimana/bisvo-dashboard-beta/blob/master/wordcloud-1.8.1-cp39-cp39-win_amd64.whl
 yfinance==0.1.55
