@@ -16,8 +16,8 @@ import math
 import requests
 import os
 from pandas_datareader import data
-from scipy.stats import percentileofscore as score
-from statistics import mean 
+# from scipy.stats import percentileofscore as score
+# from statistics import mean 
 
 ######Import classes I designed as modules
 from Data import *
@@ -73,7 +73,7 @@ def main():
 	##view checkbox
 	# dashboard = display_options.radio("",("My Portfolio","Real Time","Historical","Watchlist",\
 	# 									"Algorithmic Trading Strategies"), index=0)
-	dashboard = display_options.radio("",("Historical","Algorithmic Trading Strategies"), index=0)
+	dashboard = display_options.radio("",("Historical"), index=0)
 
 	####Add Help Content
 	if help_btn:
@@ -299,24 +299,24 @@ def main():
 		# 	#filter dislay
 		# 	filter_display(watchlist)
 
-		elif dashboard == "Algorithmic Trading Strategies":
-			st.markdown("# Algorithmic Trading Strategies")
+# 		elif dashboard == "Algorithmic Trading Strategies":
+# 			st.markdown("# Algorithmic Trading Strategies")
 
-			###Filter columns
-			alg_filter_columns = st.beta_columns(2)
-			collection = ['All','S&P 500']
-			ticker_collection = alg_filter_columns[0].selectbox("Ticker Collection",collection)
-			portfolio_size = alg_filter_columns[1].number_input("Enter the value of your portfolio:",\
-	    				min_value= 0.0)
+# 			###Filter columns
+# 			alg_filter_columns = st.beta_columns(2)
+# 			collection = ['All','S&P 500']
+# 			ticker_collection = alg_filter_columns[0].selectbox("Ticker Collection",collection)
+# 			portfolio_size = alg_filter_columns[1].number_input("Enter the value of your portfolio:",\
+# 	    				min_value= 0.0)
 			
-			stocks = pd.read_csv("data/sp_500_stocks - Copy.csv")
-			feature,top,sort = display_momentum_strategy(stocks,markdown)
-			hqm_dataframe = high_quality_momentum(stocks,token,portfolio_size, feature,top,sort)
-			st.dataframe(hqm_dataframe,height=500)
+# 			stocks = pd.read_csv("data/sp_500_stocks - Copy.csv")
+# 			feature,top,sort = display_momentum_strategy(stocks,markdown)
+# 			hqm_dataframe = high_quality_momentum(stocks,token,portfolio_size, feature,top,sort)
+# 			st.dataframe(hqm_dataframe,height=500)
 
-			feature,top,sort = display_value_strategy(stocks,markdown)
-			rv_dataframe = robust_quantitative_value(stocks,token,portfolio_size,feature,top,sort)
-			st.dataframe(rv_dataframe,height=500)
+# 			feature,top,sort = display_value_strategy(stocks,markdown)
+# 			rv_dataframe = robust_quantitative_value(stocks,token,portfolio_size,feature,top,sort)
+# 			st.dataframe(rv_dataframe,height=500)
 
 ### Cached functions
 @st.cache(allow_output_mutation=True)
