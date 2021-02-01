@@ -77,15 +77,6 @@ pydeck
 Pygments
 pyparsing
 pyrsistent
-pytest
-pytest-json-report
-pytest-metadata
-python-dateutil
-pywin32
-pywinpty
-pyzmq
-qtconsole
-QtPy
 requests
 retrying
 scipy
